@@ -10,7 +10,7 @@ type ColumnProps =  {
 /** Displays a column with its label and list of task cards */
 export default function Column({ column, tasks }: ColumnProps) {
     return (
-        <div>
+        <div className="column">
             <h2>{column.label}</h2>
             {tasks.map(task => (
                 <TaskCard key={task.id} task={task} />

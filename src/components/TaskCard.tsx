@@ -7,7 +7,7 @@ type TaskCardProps = {
 /** Displays a single task card with its tag and title */
 export default function TaskCard({ task }: TaskCardProps) {
     return (
-        <div>
+        <div className="card">
             <span>{task.tag}</span>
             <p>{task.title}</p>
         </div>

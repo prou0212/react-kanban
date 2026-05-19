@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import type { Task, Column } from '../types'
 import ColumnComponent from './Column'
+import '../App.css'
 
 /** Main board component that holds all columns and tasks */
 export default function Board() {
@@ -20,7 +21,7 @@ export default function Board() {
   ])
 
   return (
-    <div>
+    <div className="board">
       {columns.map(column => (
         <ColumnComponent
           key={column.id}
