@@ -7,6 +7,7 @@ type ColumnProps =  {
     tasks: Task[]
 }
 
+/** Displays a column with its label and list of task cards */
 export default function Column({ column, tasks }: ColumnProps) {
     return (
         <div>
