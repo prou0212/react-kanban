@@ -1,0 +1,19 @@
+import type { Task, Column } from '../types'
+
+import TaskCard from './TaskCard'
+
+type ColumnProps =  {
+    column: Column,
+    tasks: Task[]
+}
+
+export default function Column({ column, tasks }: ColumnProps) {
+    return (
+        <div>
+            <h2>{column.label}</h2>
+            {tasks.map(task => (
+                <TaskCard key={task.id} task={task} />
+            ))}
+        </div>
+    )
+}
